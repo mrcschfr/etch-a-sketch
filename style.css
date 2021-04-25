@@ -1,0 +1,32 @@
+body {
+    background-image: linear-gradient(rgb(255, 0, 170), rgb(170, 0, 255));
+}
+
+.section-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#playground {
+    min-width: 100px;
+    min-height: 100px;
+    width: 40vw;
+    height: 40vw;
+    border: 5px solid lightpink;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px grey;
+}
+
+button {
+    margin: 50px;
+}
+
+.box {
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid lightpink;
+}
