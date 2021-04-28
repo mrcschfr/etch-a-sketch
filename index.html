@@ -3,13 +3,29 @@
     <head>
         <title>Etch-A-Sketch - The Odin Project</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards|Montserrat" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
     <body>
-        <div class="section-mid">
-            <div id="playground">
+        <div class="main">
+            <div class="section-header">
+                <h1 id="headline">Etch-A-Sketch</h1>
+                <h2 id="subtext">Add crazy pixels by moving your mouse over the grid. Endless hours of fun await!</h2>
             </div>
-            <div>
-                <button>restart</button>
+            <div class="section-mid">
+                <div id="playground"></div>
+            </div>
+            <div class="section-footer">
+                <div class="controls">
+                    <div class="controls-numberFields">
+                        <label for="numberFields">Number of boxes per side</label>
+                        <input type="text"id="numberFields">
+                    </div>
+                    <div class="controls-button">
+                        <button id="restartButton">Restart</button>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="script.js"></script>
