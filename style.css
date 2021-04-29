@@ -117,7 +117,15 @@ div {
     margin: 10px;
 }
 
+.controls-errorMessage {
+    float: left;
+    margin: 10px;
+    color: #E76D83;
+    font-weight: bolder;
+}
+
 input[type='text'] {
+    font-family: var(--main-text-font), sans-serif;
     width: 35px;
     margin: 0px 5px;
 }
@@ -128,22 +136,34 @@ input[type='text'] {
 }
 
 button {
-    background-color: lightpink;
+    background-color: #E76D83;
+    color: #fff;
     font-family: var(--main-text-font), sans-serif;
     border: 1px solid grey;
     padding: 1px 5px;
 }
 
+button:hover {
+    background-color: #fff;
+    color: #E76D83;
+}
+
 @media (max-width: 600px) {
     .controls-numberFields {
         font-size: var(--mobile-text-size);
-        
+        float: none;
     }
 
-    .controls-button {
-        float: left;
-        margin: 0px 0px 10px 10px;
+    .controls-errorMessage {
         font-size: var(--mobile-text-size);
+        margin: 0px 10px 10px 10px;
+        float: none;
+    }
+    
+    .controls-button {
+        font-size: var(--mobile-text-size);
+        float: none;
+        margin: 0px 0px 10px 10px;
     }
 
     .controls {
