@@ -1,3 +1,7 @@
+/**
+ * GENERAL
+ */
+
 :root {
     --main-header-font: 'Mrs Sheppards';
     --main-header-size: 42px;
@@ -12,12 +16,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/*
-div {
-    border: 1px solid black;
-}
-*/
-
 .main {
     display: flex;
     flex-direction: column;
@@ -27,8 +25,12 @@ div {
 .section-header,
 .section-mid,
 .section-footer {
-    width: 600px;
+    width: 500px;
 }
+
+/**
+ * HEADER
+ */
 
 .section-header {
     display: flex;
@@ -51,7 +53,12 @@ div {
     text-align: center;
 }
 
-@media (max-width: 600px) {
+/**
+ * HEADER
+ * Mobile layout
+ */
+
+@media (max-width: 500px) {
     .section-header {
         margin: 25px 15px 0px 15px;
     }
@@ -61,12 +68,17 @@ div {
     }
 }
 
+/**
+ * MIDDLE PART
+ * General
+ */
+
 .section-mid {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
-    height: 600px;
+    height: 500px;
 }
 
 #playground {
@@ -79,7 +91,18 @@ div {
     height: 100%;
 }
 
-@media (max-width: 600px) {
+.box {
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid lightpink;
+}
+
+/**
+ * MIDDLE PART
+ * Mobile layout
+ */
+
+@media (max-width: 500px) {
     .section-header,
     .section-mid,
     .section-footer {
@@ -91,11 +114,10 @@ div {
     }
 }
 
-.box {
-    box-sizing: border-box;
-    background-color: white;
-    border: 1px solid lightpink;
-}
+/**
+ * FOOTER
+ * General
+ */
 
 .section-footer {
     display: flex;
@@ -105,23 +127,33 @@ div {
     margin-top: 25px;
 }
 
+/**
+ * FOOTER
+ * Controls (number and button)
+ */
+
 .controls {
     border: 5px solid lightpink;
     box-shadow: 5px 5px 5px grey;
     background-color: #ffffff;
     width: 100%;
+    margin: 0px 0px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .controls-numberFields {
-    float: left;
     margin: 10px;
 }
 
 .controls-errorMessage {
-    float: left;
-    margin: 10px;
     color: #E76D83;
     font-weight: bolder;
+}
+
+.invisible {
+    display: none;
 }
 
 input[type='text'] {
@@ -131,7 +163,6 @@ input[type='text'] {
 }
 
 .controls-button {
-    float: right;
     margin: 10px;
 }
 
@@ -148,7 +179,61 @@ button:hover {
     color: #E76D83;
 }
 
-@media (max-width: 600px) {
+/**
+ * FOOTER
+ * Colors
+ */
+
+.colors {
+    border: 5px solid lightpink;
+    box-shadow: 5px 5px 5px grey;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.color {
+    height: 20px;
+    width: 20px;
+    margin: 10px;;
+    border: 1px solid grey;
+}
+
+.color:hover {
+    transform: scale(1.1);
+}
+
+#palespringbud {
+    background-color: hsl(61, 35%, 75%);
+}
+
+#cambridgeblue {
+    background-color: hsl(154, 18%, 67%);
+}
+
+#airsuperiorityblue {
+    background-color: hsl(202, 30%, 59%);
+}
+
+#bluemunsell {
+    background-color: hsl(190, 75%, 37%);
+}
+
+#cybergrape {
+    background-color: hsl(256, 30%, 38%);
+}
+
+#white {
+    background-color: hsl(0, 0%, 100%);
+}
+
+/**
+ * FOOTER
+ * Mobile layout
+ */
+
+@media (max-width: 500px) {
     .controls-numberFields {
         font-size: var(--mobile-text-size);
         float: none;
@@ -167,6 +252,9 @@ button:hover {
     }
 
     .controls {
-        margin: 0px 0px 25px 0px;
+        margin: 0px 0px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

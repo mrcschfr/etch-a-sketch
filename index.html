@@ -3,7 +3,8 @@
     <head>
         <title>Etch-A-Sketch - The Odin Project</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards|Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards|Montserrat" rel="stylesheet">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
@@ -20,14 +21,22 @@
                 <div class="controls">
                     <div class="controls-numberFields">
                         <label for="numberFields">Number of boxes per side</label>
-                        <input type="text"id="numberFields">
+                        <input type="text" id="numberFields">
                     </div>
-                    <div class="controls-errorMessage">
+                    <div class="controls-errorMessage invisible">
                         <span id="message"></span>
                     </div>
                     <div class="controls-button">
                         <button id="restartButton">Restart</button>
                     </div>
+                </div>
+                <div class="colors">
+                    <div class="color" id="palespringbud"></div>
+                    <div class="color" id="cambridgeblue"></div>
+                    <div class="color" id="airsuperiorityblue"></div>
+                    <div class="color" id="bluemunsell"></div>
+                    <div class="color" id="cybergrape"></div>
+                    <div class="color" id="white"></div>
                 </div>
             </div>
         </div>
