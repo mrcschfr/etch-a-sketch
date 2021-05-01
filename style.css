@@ -234,6 +234,10 @@ button:hover {
  */
 
 @media (max-width: 500px) {
+    .section-footer {
+        margin-bottom: 25px;
+    }
+
     .controls-numberFields {
         font-size: var(--mobile-text-size);
         float: none;
