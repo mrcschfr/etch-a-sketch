@@ -124,7 +124,7 @@ body {
     font-family: var(--main-text-font), sans-serif;
     flex-direction: column;
     align-items: center;
-    margin-top: 25px;
+    margin: 25px 0px 25px 0px;
 }
 
 /**
@@ -234,10 +234,6 @@ button:hover {
  */
 
 @media (max-width: 500px) {
-    .section-footer {
-        margin-bottom: 25px;
-    }
-
     .controls-numberFields {
         font-size: var(--mobile-text-size);
         float: none;
